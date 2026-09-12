@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>SmartVisit AI - Login</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+
+            background: linear-gradient(
+                135deg,
+                #0f172a,
+                #172554,
+                #1e3a8a
+            );
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        /* MAIN LOGIN CONTAINER */
+
+        .login-container {
+            width: 90%;
+            max-width: 950px;
+
+            min-height: 570px;
+
+            background: white;
+
+            border-radius: 25px;
+
+            overflow: hidden;
+
+            display: flex;
+
+            box-shadow:
+                0 25px 70px rgba(0, 0, 0, 0.35);
+        }
+
+
+        /* LEFT SIDE */
+
+        .left-section {
+            width: 50%;
+
+            background: #101a35;
+
+            color: white;
+
+            padding: 55px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+        }
+
+
+        .logo {
+            font-size: 32px;
+
+            font-weight: bold;
+
+            letter-spacing: 1px;
+
+            margin-bottom: 20px;
+        }
+
+
+        .logo span {
+            color: #4f8cff;
+        }
+
+
+        .left-section h1 {
+            font-size: 40px;
+
+            line-height: 1.15;
+
+            margin-bottom: 20px;
+        }
+
+
+        .left-section p {
+            color: #cbd5e1;
+
+            font-size: 16px;
+
+            line-height: 1.7;
+
+            max-width: 380px;
+        }
+
+
+        .feature {
+            margin-top: 35px;
+        }
+
+
+        .feature-item {
+            margin-bottom: 16px;
+
+            color: #e2e8f0;
+
+            font-size: 14px;
+        }
+
+
+        .circle {
+            display: inline-flex;
+
+            width: 28px;
+            height: 28px;
+
+            border-radius: 50%;
+
+            background: #2563eb;
+
+            align-items: center;
+
+            justify-content: center;
+
+            margin-right: 10px;
+
+            font-size: 12px;
+
+            font-weight: bold;
+        }
+
+
+        /* RIGHT SIDE */
+
+        .right-section {
+            width: 50%;
+
+            padding: 55px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+        }
+
+
+        .right-section h2 {
+            font-size: 30px;
+
+            color: #101a35;
+
+            margin-bottom: 8px;
+        }
+
+
+        .subtitle {
+            color: #64748b;
+
+            font-size: 14px;
+
+            margin-bottom: 30px;
+        }
+
+
+        /* FORM */
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+
+        label {
+            display: block;
+
+            color: #334155;
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+            margin-bottom: 8px;
+        }
+
+
+        input,
+        select {
+            width: 100%;
+
+            padding: 14px;
+
+            border: 1px solid #d7dee9;
+
+            border-radius: 10px;
+
+            background: #f8fafc;
+
+            font-size: 15px;
+
+            outline: none;
+        }
+
+
+        input:focus,
+        select:focus {
+            border-color: #2563eb;
+
+            background: white;
+
+            box-shadow:
+                0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+
+        /* LOGIN BUTTON */
+
+        .login-btn {
+            width: 100%;
+
+            padding: 15px;
+
+            border: none;
+
+            border-radius: 10px;
+
+            background: #2563eb;
+
+            color: white;
+
+            font-size: 15px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            margin-top: 5px;
+
+            transition: 0.2s;
+        }
+
+
+        .login-btn:hover {
+            background: #1d4ed8;
+
+            transform: translateY(-1px);
+        }
+
+
+        .bottom-text {
+            text-align: center;
+
+            margin-top: 22px;
+
+            font-size: 13px;
+
+            color: #94a3b8;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 750px) {
+
+            .login-container {
+                flex-direction: column;
+
+                margin: 20px;
+            }
+
+            .left-section,
+            .right-section {
+                width: 100%;
+            }
+
+            .left-section {
+                padding: 35px;
+            }
+
+            .left-section h1 {
+                font-size: 30px;
+            }
+
+            .right-section {
+                padding: 35px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="login-container">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="left-section">
+
+            <div class="logo">
+                SMART<span>VISIT</span> AI
+            </div>
+
+
+            <h1>
+                Know Before<br>
+                You Go.
+            </h1>
+
+
+            <p>
+                Plan your visit at the right time.
+                SmartVisit helps you find a suitable
+                time for your required service before
+                you travel.
+            </p>
+
+
+            <div class="feature">
+
+                <div class="feature-item">
+
+                    <span class="circle">1</span>
+
+                    Select your service
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <span class="circle">2</span>
+
+                    Choose your preferred time
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <span class="circle">3</span>
+
+                    Get your recommended visit time
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="right-section">
+
+            <h2>
+                Welcome Back
+            </h2>
+
+            <p class="subtitle">
+                Sign in to continue to SmartVisit AI
+            </p>
+
+
+            <form action="/" method="POST">
+
+
+                <div class="form-group">
+
+                    <label>
+                        Username
+                    </label>
+
+                    <input
+                        type="text"
+                        name="username"
+                        placeholder="Enter your username"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Login As
+                    </label>
+
+                    <select name="role" required>
+
+                        <option value="">
+                            Select your role
+                        </option>
+
+                        <option value="customer">
+                            Customer
+                        </option>
+
+                        <option value="admin">
+                            Organization / Admin
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="login-btn">
+
+                    LOGIN
+
+                </button>
+
+
+            </form>
+
+
+            <p class="bottom-text">
+                SmartVisit AI · Know Before You Go
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

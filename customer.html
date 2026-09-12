@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>SmartVisit AI - Customer</title>
+
+    <link rel="stylesheet" href="/static/style.css?v=2">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            SMART<span>VISIT</span> AI
+        </div>
+
+        <div class="nav-right">
+            Customer Dashboard
+        </div>
+
+    </nav>
+
+
+    <main class="main">
+
+        <div class="heading">
+
+            <h1>Plan Your Visit</h1>
+
+            <p>
+                Find a suitable time before you travel.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Visit Details</h2>
+
+            <p class="card-description">
+                Tell us what you need and when you prefer to visit.
+            </p>
+
+
+            <form action="/recommend" method="POST">
+
+
+                <div class="form-group">
+
+                    <label>Select Your Work</label>
+
+                    <select name="service" required>
+
+                        <option value="">
+                            -- Select Work --
+                        </option>
+
+                        <option value="KYC Update">
+                            KYC Update
+                        </option>
+
+                        <option value="Account Opening">
+                            Account Opening
+                        </option>
+
+                        <option value="Loan Enquiry">
+                            Loan Enquiry
+                        </option>
+
+                        <option value="Address Change">
+                            Address Change
+                        </option>
+
+                        <option value="General Enquiry">
+                            General Enquiry
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+                    <label>Preferred Date</label>
+
+                <input
+                    type="date"
+                    name="preferred_date"
+                    required>
+                </div>
+                <div class="form-group">
+
+                    <label>Preferred Time</label>
+
+                    <select
+                        name="preferred_time"
+                        required>
+
+                        <option value="">
+                            -- Select Time --
+                        </option>
+
+                        <option value="9:30 AM - 10:30 AM">
+                            9:30 AM - 10:30 AM
+                        </option>
+
+                        <option value="10:30 AM - 11:30 AM">
+                            10:30 AM - 11:30 AM
+                        </option>
+
+                        <option value="11:30 AM - 12:30 PM">
+                            11:30 AM - 12:30 PM
+                        </option>
+
+                        <option value="12:30 PM - 1:30 PM">
+                            12:30 PM - 1:30 PM
+                        </option>
+
+                        <option value="2:00 PM - 3:00 PM">
+                            2:00 PM - 3:00 PM
+                        </option>
+
+                        <option value="3:00 PM - 4:00 PM">
+                            3:00 PM - 4:00 PM
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Travel Distance</label>
+
+                    <input
+                        type="number"
+                        name="distance"
+                        placeholder="Enter distance in km">
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn">
+
+                    FIND BEST TIME
+
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
